@@ -13,6 +13,7 @@ namespace SE_Assignment
 {
     public partial class Login : Form
     {
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\GhatiaHub-master (1)\GhatiaHub-master\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
         public Login()
         {
             InitializeComponent();
@@ -40,20 +41,54 @@ namespace SE_Assignment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\GhatiaHub - master(1)\GhatiaHub - master\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from login where username = '" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if(dt.Rows[0][0].ToString()=="1")
+            if (usernameBox.Text == "")
             {
-                this.Hide();
-                Main_Page mm = new Main_Page();
-                mm.Show();
+                MessageBox.Show("Please enter user name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                usernameBox.Focus();
+                return;
             }
-            else
+            if (passwordBox.Text == "")
             {
-                MessageBox.Show("Please enter correct Username and Password", "Alert!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                passwordBox.Focus();
+                return;
+            }
+            try
+            {
+                SqlConnection loginCon = default(SqlConnection);
+                loginCon = new SqlConnection(cs);
 
+                SqlCommand loginCom = default(SqlCommand);
+                loginCom = new SqlCommand("SELECT Username,Password FROM login WHERE Username = @username AND Password = @password", loginCon);
+
+                SqlParameter uName = new SqlParameter("@Username", SqlDbType.VarChar);
+                SqlParameter uPass = new SqlParameter("@Password", SqlDbType.VarChar);
+
+                uName.Value = usernameBox.Text;
+                uPass.Value = passwordBox.Text;
+
+                loginCom.Parameters.Add(uName);
+                loginCom.Parameters.Add(uPass);
+
+                loginCom.Connection.Open();
+
+                SqlDataReader loginRead = loginCom.ExecuteReader(CommandBehavior.CloseConnection);
+
+                if (loginRead.Read() == true)
+                {
+                    Main_Page mm = new Main_Page();
+                    mm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Login failed", "Login Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (loginCon.State == ConnectionState.Open)
+                    loginCon.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

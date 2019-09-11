@@ -16,5 +16,10 @@ namespace SE_Assignment
         {
             InitializeComponent();
         }
+
+        private void Main_Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

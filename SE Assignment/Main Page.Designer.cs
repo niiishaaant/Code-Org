@@ -91,6 +91,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Main_Page";
             this.Text = "Main_Page";
+            this.Load += new System.EventHandler(this.Main_Page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
