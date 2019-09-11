@@ -49,7 +49,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(623, 12);
+            this.button1.Location = new System.Drawing.Point(1087, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 40);
             this.button1.TabIndex = 1;
@@ -59,9 +59,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(437, 13);
+            this.button2.Location = new System.Drawing.Point(916, 11);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 39);
+            this.button2.Size = new System.Drawing.Size(165, 40);
             this.button2.TabIndex = 2;
             this.button2.Text = "SignUp";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,13 +72,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Desc);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Homepage";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -38,8 +38,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.confirmSignup = new System.Windows.Forms.Button();
+            this.cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -64,6 +64,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(300, 20);
             this.textBox2.TabIndex = 0;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -107,6 +108,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(300, 20);
             this.textBox5.TabIndex = 0;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label5
             // 
@@ -125,31 +127,32 @@
             this.comboBox1.Size = new System.Drawing.Size(300, 21);
             this.comboBox1.TabIndex = 2;
             // 
-            // button1
+            // confirmSignup
             // 
-            this.button1.Location = new System.Drawing.Point(181, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 55);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Confirm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.confirmSignup.Location = new System.Drawing.Point(181, 353);
+            this.confirmSignup.Name = "confirmSignup";
+            this.confirmSignup.Size = new System.Drawing.Size(165, 55);
+            this.confirmSignup.TabIndex = 3;
+            this.confirmSignup.Text = "Confirm";
+            this.confirmSignup.UseVisualStyleBackColor = true;
+            this.confirmSignup.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // cancel
             // 
-            this.button2.Location = new System.Drawing.Point(477, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 55);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cancel.Location = new System.Drawing.Point(477, 353);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(165, 55);
+            this.cancel.TabIndex = 3;
+            this.cancel.Text = "Cancel";
+            this.cancel.UseVisualStyleBackColor = true;
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cancel);
+            this.Controls.Add(this.confirmSignup);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -180,7 +183,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button confirmSignup;
+        private System.Windows.Forms.Button cancel;
     }
 }
