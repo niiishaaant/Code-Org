@@ -16,10 +16,10 @@ namespace SE_Assignment
         {
             InitializeComponent();
         }
-
+        SignUp ss = new SignUp();
+        Login mm = new Login();
         private void button1_Click(object sender, EventArgs e)
         {
-            Login mm = new Login();
             mm.Show();
         }
 
@@ -27,10 +27,9 @@ namespace SE_Assignment
         {
 
         }
-
+        
         private void button2_Click_1(object sender, EventArgs e)
-        {
-            SignUp ss = new SignUp();
+        { 
             ss.Show();
         }
     }
