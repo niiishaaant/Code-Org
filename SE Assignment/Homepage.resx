@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Desc.Text" xml:space="preserve">
+    <value>Welcome to the CodeOrg source code database.
+Here you can choose the program statement that you want
+as well as the programming language that you want the source code in!
+
+But first, enter your credentials by clicking on the login page and entering your username and password!
+
+If you're not registered, click on SignUp to create an account!</value>
+  </data>
 </root>

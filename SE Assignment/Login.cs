@@ -13,7 +13,7 @@ namespace SE_Assignment
 {
     public partial class Login : Form
     {
-        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\GhatiaHub-master (1)\GhatiaHub-master\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\GhatiaHub-master (1)\Code-repository\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
         public Login()
         {
             InitializeComponent();

@@ -113,6 +113,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
@@ -131,6 +132,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\AppLogo.png" />
+    <None Include="Resources\code.png" />
+    <None Include="Resources\code.ico" />
     <Content Include="testlogin.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

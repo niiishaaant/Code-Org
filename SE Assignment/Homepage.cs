@@ -25,5 +25,10 @@ namespace SE_Assignment
         { 
             ss.Show();
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
