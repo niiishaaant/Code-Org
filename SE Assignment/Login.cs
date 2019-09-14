@@ -38,7 +38,7 @@ namespace SE_Assignment
         {
 
         }
-
+        Main_Page mm = new Main_Page();
         private void button1_Click(object sender, EventArgs e)
         {
             if (usernameBox.Text == "")
@@ -76,7 +76,7 @@ namespace SE_Assignment
 
                 if (loginRead.Read() == true)
                 {
-                    Main_Page mm = new Main_Page();
+                    
                     mm.Show();
                 }
                 else
