@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forgot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot.Designer.cs">
+      <DependentUpon>Forgot.cs</DependentUpon>
+    </Compile>
     <Compile Include="Output.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forgot.resx">
+      <DependentUpon>Forgot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Output.resx">
       <DependentUpon>Output.cs</DependentUpon>
     </EmbeddedResource>
