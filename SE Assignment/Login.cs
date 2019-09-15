@@ -13,7 +13,7 @@ namespace SE_Assignment
 {
     public partial class Login : Form
     {
-        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\GhatiaHub-master (1)\Code-repository\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\CodeRepo\Code-repository\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
         public Login()
         {
             InitializeComponent();
@@ -36,9 +36,9 @@ namespace SE_Assignment
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            usernameBox.Focus();
         }
-        Main_Page mm = new Main_Page();
+        Output op = new Output();
         private void button1_Click(object sender, EventArgs e)
         {
             if (usernameBox.Text == "")
@@ -63,9 +63,9 @@ namespace SE_Assignment
 
                 SqlParameter uName = new SqlParameter("@Username", SqlDbType.VarChar);
                 SqlParameter uPass = new SqlParameter("@Password", SqlDbType.VarChar);
-
                 uName.Value = usernameBox.Text;
                 uPass.Value = passwordBox.Text;
+
 
                 loginCom.Parameters.Add(uName);
                 loginCom.Parameters.Add(uPass);
@@ -75,9 +75,9 @@ namespace SE_Assignment
                 SqlDataReader loginRead = loginCom.ExecuteReader(CommandBehavior.CloseConnection);
 
                 if (loginRead.Read() == true)
-                {
-                    
-                    mm.Show();
+                { 
+                    op.Show();
+                    this.Close();
                 }
                 else
                 {

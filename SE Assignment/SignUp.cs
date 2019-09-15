@@ -13,61 +13,85 @@ namespace SE_Assignment
 {
     public partial class SignUp : Form
     {
-        String cs = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\GhatiaHub-master (1)\GhatiaHub-master\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\CodeRepo\Code-repository\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
+
         public SignUp()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void SignUp_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SqlConnection signupCon = new SqlConnection(cs);
-            SqlCommand signupCom = new SqlCommand("insert into Main ([Username], [Password], [Security Question], [Security Answer]) values(@username,@password,@SeQue,@SeAns)", signupCon);
-            signupCom.CommandType = CommandType.StoredProcedure;
-            signupCom.Parameters.AddWithValue("@username", textBox1.Text);
-            if (textBox5.Text == textBox2.Text)
-                signupCom.Parameters.AddWithValue("@password", textBox2.Text);
-            else
+            if (unameSignUp.Text == "")
             {
-                MessageBox.Show("Please Check Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox5.Focus();
+                MessageBox.Show("Please enter username!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                unameSignUp.Focus();
                 return;
             }
-            signupCom.Parameters.AddWithValue("@SeQue", comboBox1.Text);
-            signupCom.Parameters.AddWithValue("@SeAns", textBox4.Text);
-            signupCon.Open();
-            int i = signupCom.ExecuteNonQuery();
-
-            signupCon.Close();
-
-            if (i != 0)
+            if (passSignUp.Text == "")
             {
-                MessageBox.Show(i + "Data Saved");
+                MessageBox.Show("Please enter password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                passSignUp.Focus();
+                return;
+            }
+            if(passSignUp.Text!=passConf.Text)
+            {
+                MessageBox.Show("Passwords Entered are not same, please enter again!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                passSignUp.Clear();
+                passConf.Clear();
+                passSignUp.Focus();
+                return;
+            }
+            try
+            {
+                using (SqlConnection signupCon = new SqlConnection(cs))
+                { 
+                    signupCon.Open();
+                    using (SqlCommand signupCom = new SqlCommand("insert into login ([username], [password], [SeQue], [SeAns]) values(@uname,@pass,@sequ,@sean)", signupCon))
+                    {
+                        signupCom.Parameters.AddWithValue("@uname", unameSignUp.Text);
+                        signupCom.Parameters.AddWithValue("@pass", passSignUp.Text);
+                        signupCom.Parameters.AddWithValue("@sequ", secQueDrop.Text);
+                        signupCom.Parameters.AddWithValue("@sean", secAnsBox.Text);
+                        signupCom.ExecuteNonQuery();
+                        MessageBox.Show("Registered Successfully","Successful", MessageBoxButtons.OK);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.Close();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void TextBox6_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Signup_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void TxtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BttnCancel_Click(object sender, EventArgs e)
         {
 
         }
