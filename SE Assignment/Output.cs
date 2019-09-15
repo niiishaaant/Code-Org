@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
@@ -67,7 +60,7 @@ namespace SE_Assignment
                 }
                 else if (a == "Fibonacci Series" && b == "Python")
                 {
-                    TextReader reader = new StreamReader("fibinpy.txt");
+                    TextReader reader = new StreamReader("fibo.py");
                     richTextBox1.Text = reader.ReadToEnd();
                 }
                 else if (a == "Fibonacci Series" && b == "Java")
@@ -87,7 +80,7 @@ namespace SE_Assignment
                 }
                 else if (a == "Factorial Of A Number" && b == "Python")
                 {
-                    TextReader reader = new StreamReader("factinpy.txt");
+                    TextReader reader = new StreamReader("fact.py");
                     richTextBox1.Text = reader.ReadToEnd();
                 }
                 else if (a == "Factorial Of A Number" && b == "Java")
@@ -108,7 +101,7 @@ namespace SE_Assignment
                 }
                 else if (a == "Calculator" && b == "Python")
                 {
-                    TextReader reader = new StreamReader("calcinpy.txt");
+                    TextReader reader = new StreamReader("calc.py");
                     richTextBox1.Text = reader.ReadToEnd();
                 }
                 else if (a == "Calculator" && b == "Java")
@@ -150,7 +143,7 @@ namespace SE_Assignment
                 }
                 else if (a == "Linked List" && b == "Python")
                 {
-                    TextReader reader = new StreamReader("llinpy.txt");
+                    TextReader reader = new StreamReader("list.py");
                     richTextBox1.Text = reader.ReadToEnd();
                 }
                 else if (a == "Linked List" && b == "Java")
@@ -251,7 +244,10 @@ namespace SE_Assignment
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox2.Text == "Python")
+                button4.Enabled = false;
+            else
+                button4.Enabled = true;
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -264,7 +260,7 @@ namespace SE_Assignment
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Output_Load(object sender, EventArgs e)
         {
 
         }
