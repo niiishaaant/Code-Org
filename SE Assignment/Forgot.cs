@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -26,15 +20,13 @@ namespace SE_Assignment
 
         private void Forgot_Load(object sender, EventArgs e)
         {
-            textBox3.Enabled = false;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        }    private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
             {
@@ -54,7 +46,7 @@ namespace SE_Assignment
                 SqlParameter se = new SqlParameter("@seque", SqlDbType.NVarChar);
                 SqlParameter sea = new SqlParameter("@seans", SqlDbType.NVarChar);
                 uName.Value = textBox1.Text;
-                se.Value = textBox2.Text;
+                se.Value = comboBox1.Text;
                 sea.Value = textBox3.Text;
 
 

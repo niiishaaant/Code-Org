@@ -85,5 +85,12 @@ namespace SE_Assignment
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Forgot fo = new Forgot();
+            fo.Show();
+            this.Close();
+        }
     }
 }
