@@ -32,5 +32,10 @@ namespace SE_Assignment
         {
             Application.Exit();
         }
+
+        private void Desc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

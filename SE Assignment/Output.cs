@@ -19,7 +19,9 @@ namespace SE_Assignment
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //to be linked to the previous page 
+            Login l = new Login();
+            l.Show();
+            this.Hide();
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -65,7 +67,7 @@ namespace SE_Assignment
                 }
                 else if (a == "Fibonacci Series" && b == "Java")
                 {
-                    TextReader reader = new StreamReader("fibinja.txt");
+                    TextReader reader = new StreamReader("fiboinja.txt");
                     richTextBox1.Text = reader.ReadToEnd();
                 }
                 else if (a == "Factorial Of A Number" && b == "C")
@@ -178,11 +180,11 @@ namespace SE_Assignment
             {
                 a = comboBox1.SelectedItem.ToString();
                 b = comboBox2.SelectedItem.ToString();
-                if (b == "Java" || b == "Python")
+                /*if (b == "Java" || b == "Python")
                 {
                     MessageBox.Show("Program not available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (a == "Fibonacci Series" && b == "C")
+                }*/
+                if (a == "Fibonacci Series" && b == "C")
                 {
                     Process.Start("fibinc.exe");
                 }
@@ -190,6 +192,11 @@ namespace SE_Assignment
                 {
                     Process.Start("fibincpp.exe");
                 }
+                else if (a == "Fibonacci Series" && b == "Python")
+                {
+                    Process.Start("fibo.py");
+                }
+
                 else if (a == "Factorial Of A Number" && b == "C")
                 {
                     Process.Start("factinc.exe");
@@ -198,7 +205,10 @@ namespace SE_Assignment
                 {
                     Process.Start("factincpp.exe");
                 }
-                
+                else if (a == "Factorial Of A Number" && b == "Python")
+                {
+                    Process.Start("fact.py");
+                }
                 else if (a == "Calculator" && b == "C")
                 {
                     Process.Start("calcinc.exe");
@@ -207,15 +217,21 @@ namespace SE_Assignment
                 {
                     Process.Start("calcincpp.exe");
                 }
-                 else if (a == "Banking System" && b == "C")
+                else if (a == "Calculator" && b == "Python")
+                {
+                    Process.Start("calc.py");
+                }
+
+                else if (a == "Banking System" && b == "C")
                 {
                     Process.Start("bankinc.exe");
                 }
-                else if (a == "Banking System" && b == "C++")
+              /*  else if (a == "Banking System" && b == "Python")
                 {
-                    Process.Start("bankincpp.exe");
+                    Process.Start("");
                 }
                 
+               */
                 else if (a == "Linked List" && b == "C")
                 {
                     Process.Start("llinc.exe");
@@ -223,6 +239,10 @@ namespace SE_Assignment
                 else if (a == "Linked List" && b == "C++")
                 {
                     Process.Start("llincpp.exe");
+                }
+                else if (a == "Linked List" && b == "Python")
+                {
+                    Process.Start("list.py");
                 }
 
             }
@@ -244,7 +264,7 @@ namespace SE_Assignment
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox2.Text == "Python")
+            if (comboBox2.Text == "Java")
                 button4.Enabled = false;
             else
                 button4.Enabled = true;

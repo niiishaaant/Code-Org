@@ -34,6 +34,7 @@
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -41,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(155, 75);
+            this.label1.Location = new System.Drawing.Point(83, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 18);
             this.label1.TabIndex = 0;
@@ -53,7 +54,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(155, 159);
+            this.label2.Location = new System.Drawing.Point(85, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 0;
@@ -62,7 +63,7 @@
             // 
             // usernameBox
             // 
-            this.usernameBox.Location = new System.Drawing.Point(325, 73);
+            this.usernameBox.Location = new System.Drawing.Point(198, 189);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(176, 20);
             this.usernameBox.TabIndex = 1;
@@ -70,7 +71,7 @@
             // 
             // passwordBox
             // 
-            this.passwordBox.Location = new System.Drawing.Point(325, 157);
+            this.passwordBox.Location = new System.Drawing.Point(198, 238);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(176, 20);
             this.passwordBox.TabIndex = 1;
@@ -79,7 +80,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(158, 222);
+            this.button1.Location = new System.Drawing.Point(54, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 48);
             this.button1.TabIndex = 2;
@@ -90,13 +91,22 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(355, 222);
+            this.button2.Location = new System.Drawing.Point(265, 285);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 48);
             this.button2.TabIndex = 4;
             this.button2.Text = "Forgot Password";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SE_Assignment.Properties.Resources.code;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(153, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(142, 147);
+            this.panel1.TabIndex = 5;
             // 
             // Login
             // 
@@ -105,7 +115,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(688, 354);
+            this.ClientSize = new System.Drawing.Size(465, 354);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.passwordBox);
@@ -134,6 +145,7 @@
         private System.Windows.Forms.TextBox passwordBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

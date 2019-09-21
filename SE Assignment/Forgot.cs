@@ -7,7 +7,7 @@ namespace SE_Assignment
 {
     public partial class Forgot : Form
     {
-        String cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\CodeRepo\Code-repository\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
+        String cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Lex Mascarenhas\Documents\GitHub\Code-Repository\SE Assignment\bin\Debug\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
         public Forgot()
         {
             InitializeComponent();
@@ -74,6 +74,18 @@ namespace SE_Assignment
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.InitializeComponent();
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

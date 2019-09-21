@@ -6,7 +6,7 @@ namespace SE_Assignment
 {
     public partial class SignUp : Form
     {
-        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='N:\nishant\Desktop\CodeRepo\Code-repository\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Lex Mascarenhas\Documents\GitHub\Code-Repository\SE Assignment\bin\Debug\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
 
         public SignUp()
         {
@@ -87,6 +87,11 @@ namespace SE_Assignment
         private void BttnCancel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
