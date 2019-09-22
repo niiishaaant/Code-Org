@@ -8,7 +8,7 @@ namespace SE_Assignment
     public partial class Login : Form
     {
         
-        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Lex Mascarenhas\Documents\GitHub\Code-Repository\SE Assignment\bin\Debug\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Shreeyash Naik\Documents\GitHub\Code-Repository\SE Assignment\testlogin.mdf';Integrated Security = True; Connect Timeout = 30";
         public Login()
         {
             InitializeComponent();

@@ -32,7 +32,6 @@
             this.Desc = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Desc
@@ -41,7 +40,7 @@
             this.Desc.Font = new System.Drawing.Font("Candara", 13.5F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Desc.ForeColor = System.Drawing.Color.Black;
             this.Desc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Desc.Location = new System.Drawing.Point(12, 430);
+            this.Desc.Location = new System.Drawing.Point(12, 440);
             this.Desc.Name = "Desc";
             this.Desc.Size = new System.Drawing.Size(866, 110);
             this.Desc.TabIndex = 0;
@@ -73,17 +72,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // exit
-            // 
-            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit.Location = new System.Drawing.Point(778, 544);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(100, 40);
-            this.exit.TabIndex = 4;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = true;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,7 +80,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(890, 596);
-            this.Controls.Add(this.exit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Desc);
@@ -113,6 +100,5 @@
         private System.Windows.Forms.Label Desc;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button exit;
     }
 }
