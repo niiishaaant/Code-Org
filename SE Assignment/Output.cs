@@ -124,7 +124,7 @@ namespace SE_Assignment
                 }
                 else if (a == "Banking System" && b == "Python")
                 {
-                    TextReader reader = new StreamReader("bankinpy.txt");
+                    TextReader reader = new StreamReader("bank.py");
                     richTextBox1.Text = reader.ReadToEnd();
                 }
                 else if (a == "Banking System" && b == "Java")
@@ -226,12 +226,12 @@ namespace SE_Assignment
                 {
                     Process.Start("bankinc.exe");
                 }
-              /*  else if (a == "Banking System" && b == "Python")
+                else if (a == "Banking System" && b == "Python")
                 {
-                    Process.Start("");
+                    Process.Start("bank.py");
                 }
                 
-               */
+              
                 else if (a == "Linked List" && b == "C")
                 {
                     Process.Start("llinc.exe");
