@@ -42,7 +42,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(423, 113);
+            this.textBox1.Location = new System.Drawing.Point(470, 103);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(296, 20);
             this.textBox1.TabIndex = 0;
@@ -51,29 +51,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 112);
+            this.label1.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(385, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 18);
+            this.label1.Size = new System.Drawing.Size(79, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(268, 189);
+            this.label2.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(332, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 18);
+            this.label2.Size = new System.Drawing.Size(132, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Security Question";
             // 
             // userConfirm
             // 
             this.userConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userConfirm.Location = new System.Drawing.Point(423, 340);
+            this.userConfirm.Location = new System.Drawing.Point(470, 341);
             this.userConfirm.Name = "userConfirm";
-            this.userConfirm.Size = new System.Drawing.Size(125, 40);
+            this.userConfirm.Size = new System.Drawing.Size(100, 38);
             this.userConfirm.TabIndex = 3;
             this.userConfirm.Text = "Confirm";
             this.userConfirm.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(597, 340);
+            this.button2.Location = new System.Drawing.Point(666, 341);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 40);
+            this.button2.Size = new System.Drawing.Size(100, 38);
             this.button2.TabIndex = 4;
             this.button2.Text = "Refresh";
             this.button2.UseVisualStyleBackColor = true;
@@ -92,7 +92,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(423, 261);
+            this.textBox3.Location = new System.Drawing.Point(470, 251);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(296, 20);
             this.textBox3.TabIndex = 6;
@@ -107,7 +107,7 @@
             "What is your mother\'s maiden name?",
             "In what country were you born?",
             "Who is the artist of your favorite song?"});
-            this.comboBox1.Location = new System.Drawing.Point(423, 186);
+            this.comboBox1.Location = new System.Drawing.Point(470, 176);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(296, 21);
             this.comboBox1.TabIndex = 7;
@@ -115,20 +115,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(268, 260);
+            this.label3.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(404, 249);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 18);
+            this.label3.Size = new System.Drawing.Size(61, 19);
             this.label3.TabIndex = 8;
             this.label3.Text = "Answer";
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::SE_Assignment.Properties.Resources.code;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(33, 107);
+            this.panel1.Location = new System.Drawing.Point(12, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 212);
+            this.panel1.Size = new System.Drawing.Size(297, 270);
             this.panel1.TabIndex = 9;
             // 
             // Forgot
@@ -147,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Forgot";
             this.Text = "Forgot Password";
             this.Load += new System.EventHandler(this.Forgot_Load);
