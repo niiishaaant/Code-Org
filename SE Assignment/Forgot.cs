@@ -7,7 +7,7 @@ namespace SE_Assignment
 {
     public partial class Forgot : Form
     {
-        String cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Lex Mascarenhas\Documents\GitHub\Code-Repository\SE Assignment\bin\Debug\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
+        String cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Shreeyash Naik\Documents\GitHub\Code-Repository\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
         public Forgot()
         {
             InitializeComponent();
@@ -26,7 +26,8 @@ namespace SE_Assignment
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-        }    private void button1_Click(object sender, EventArgs e)
+        }
+        private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
             {
@@ -86,6 +87,13 @@ namespace SE_Assignment
         private void Button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Close();
         }
     }
 }

@@ -37,5 +37,10 @@ namespace SE_Assignment
         {
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
