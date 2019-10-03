@@ -133,6 +133,7 @@
     <None Include="Resources\Icon.png" />
     <None Include="Resources\Homepage2.png" />
     <None Include="Resources\homepage2%281%29.png" />
+    <None Include="Resources\output-onlinepngtools.png" />
     <Content Include="testlogin.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
