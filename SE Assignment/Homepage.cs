@@ -42,5 +42,10 @@ namespace SE_Assignment
         {
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
