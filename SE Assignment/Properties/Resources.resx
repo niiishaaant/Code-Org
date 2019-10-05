@@ -121,6 +121,9 @@
   <data name="code1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\code.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="newLogoresized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newLogoresized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,5 +141,8 @@
   </data>
   <data name="newLogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newLogo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finallLogoResized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finallLogoResized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

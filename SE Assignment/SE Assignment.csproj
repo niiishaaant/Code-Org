@@ -135,13 +135,12 @@
     <None Include="Resources\AppLogo.png" />
     <None Include="Resources\code.png" />
     <None Include="Resources\code.ico" />
-    <None Include="Resources\Background.jpg" />
     <None Include="Resources\Icon.png" />
-    <None Include="Resources\Homepage2.png" />
-    <None Include="Resources\homepage2%281%29.png" />
     <None Include="Resources\output-onlinepngtools.png" />
     <None Include="Resources\output-onlinepngtools-removebg-preview.png" />
     <None Include="Resources\newLogo2.png" />
+    <None Include="Resources\newLogoresized.png" />
+    <None Include="Resources\finallLogoResized.png" />
     <Content Include="testlogin.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
