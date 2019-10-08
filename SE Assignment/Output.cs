@@ -180,10 +180,6 @@ namespace SE_Assignment
             {
                 a = comboBox1.SelectedItem.ToString();
                 b = comboBox2.SelectedItem.ToString();
-                /*if (b == "Java" || b == "Python")
-                {
-                    MessageBox.Show("Program not available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }*/
                 if (a == "Fibonacci Series" && b == "C")
                 {
                     Process.Start("fibinc.exe");

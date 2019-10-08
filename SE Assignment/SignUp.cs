@@ -6,7 +6,7 @@ namespace SE_Assignment
 {
     public partial class SignUp : Form
     {
-        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Shreeyash Naik\Documents\GitHub\Code-Repository\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
+        string cs = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\nishant\Desktop\CodeRepo\Code-repository\SE Assignment\testlogin.mdf';Integrated Security=True;Connect Timeout=30";
 
         public SignUp()
         {
