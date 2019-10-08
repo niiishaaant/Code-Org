@@ -17,10 +17,6 @@ namespace SE_Assignment
             mm.Show();
         }
 
-        private void Homepage_Load(object sender, EventArgs e)
-        {
-
-        }
         
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -28,24 +24,9 @@ namespace SE_Assignment
             ss.Show();
         }
 
-        private void exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Desc_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button3_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

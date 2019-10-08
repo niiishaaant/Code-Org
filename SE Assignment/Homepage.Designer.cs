@@ -51,7 +51,6 @@
             this.Desc.TabIndex = 0;
             this.Desc.Text = resources.GetString("Desc.Text");
             this.Desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Desc.Click += new System.EventHandler(this.Desc_Click);
             // 
             // button1
             // 
@@ -111,7 +110,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Homepage
             // 
@@ -134,7 +132,6 @@
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CodeOrg";
-            this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
